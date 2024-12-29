@@ -1,0 +1,174 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #282c34;
+  color: #e8eaed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-conference {
+  display: flex;
+  flex-direction: column;
+  background-color: #1e2125;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  width: 90%;
+  max-width: 1200px;
+  height: 80%;
+}
+
+.main-video {
+  flex: 2;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.main-video .video-options {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+}
+
+.main-video .video-options button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #3c4043;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.main-video .video-options button:hover {
+  background-color: #5f6368;
+  transform: scale(1.1);
+}
+
+.participant-videos {
+  flex: 0.8;
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a2d33;
+}
+
+.participant-videos .video {
+  flex: 0 0 100px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  position: relative;
+  background-color: #3c4043;
+}
+
+.participant-videos .video .inner-circle {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.participant-videos .video:nth-child(1) .inner-circle {
+  background-color: #d65044;
+}
+
+.participant-videos .video:nth-child(2) .inner-circle {
+  background-color: #f9a825;
+}
+
+.participant-videos .video:nth-child(3) .inner-circle {
+  background-color: #43a047;
+}
+
+.participant-videos .video:nth-child(4) .inner-circle {
+  background-color: #1e88e5;
+}
+
+.participant-videos .video:nth-child(5) .inner-circle {
+  background-color: #9c27b0;
+}
+
+.participant-videos .video:nth-child(6) .inner-circle {
+  background-color: #ef5350;
+}
+
+.participant-videos .video:hover {
+  transform: scale(1.1);
+  background-color: #4a4e56;
+}
+
+.toolbar {
+  background-color: #3c4043;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.toolbar .meeting-info {
+  color: #e8eaed;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.toolbar .controls {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.toolbar .controls button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4a4e56;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.toolbar .controls button:hover {
+  background-color: #e8eaed;
+  color: #202124;
+  transform: scale(1.1);
+}
+
+.toolbar .controls button.leave {
+  background-color: #d9534f;
+  color: #fff;
+}
+
+.toolbar .controls button.leave:hover {
+  background-color: #c9302c;
+}
